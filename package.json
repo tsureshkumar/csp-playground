@@ -1,0 +1,50 @@
+{
+  "name": "good.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "php -S 127.0.0.1:3000",
+    "evild": "(cd evild; php -S 127.0.0.1:4000)",
+    "WDS": "npm run serve & npm run evild & webpack-dev-server --inline --hot",
+    "WDSC": "npm run serve & npm run evild & webpack-dev-server --inline --hot --open 'Google Chrome'",
+    "WDSF": "npm run serve & npm run evild & webpack-dev-server --inline --hot --open 'Firefox'",
+    "WDSS": "npm run serve & npm run evild & webpack-dev-server --inline --hot --open 'Safari'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "helmet-csp": "^2.7.1",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-highlight": "^0.12.0",
+    "react-markdown": "^3.6.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/loader": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-proxy-middleware": "^0.19.0",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-middleware": "^3.2.0",
+    "webpack-dev-server": "^3.1.8",
+    "webpack-livereload-plugin": "^2.1.1"
+  }
+}

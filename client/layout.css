@@ -1,0 +1,96 @@
+body {
+  margin: 5px;
+  #font-family: Open Sans;
+  font-size: 14px;
+  font-family: arial,sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  font-weight: bold;
+  font-family: Open Sans;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 54px;
+}
+
+.footer {
+}
+
+.content {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.content > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.main {
+  text-align: left;
+}
+
+.aside-1 {
+  background-color: lightgrey;
+}
+
+.aside-2 {
+  #background: lightgrey;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 auto;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .content { flex: 3 0px; }
+  .aside-1 { order: 1; flex: 0 1 200px; } 
+  .content { order: 2; }
+  .footer { order: 3; }
+
+  .main { flex: 0 1 300px; }
+  .aside-2 { flex: 1 1 300px; width: 300px; }
+
+  .main { order: 1; }
+  .aside-2 { order: 2; }
+
+}
+
+.hideMe {
+  -moz-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 5s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}

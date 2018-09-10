@@ -1,0 +1,9 @@
+.*.sw?
+node_modules/
+package-lock.json
+bundle.js
+bundle.*
+*.php-e
+csp.php
+
+# this is dynamically updated by server when run in dev mode
